@@ -1,0 +1,333 @@
+
+
+================================================================
+== Vivado HLS Report for 'matrix_conv'
+================================================================
+* Date:           Thu Dec 19 01:13:10 2024
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        final_project
+* Solution:       arr_par_sol
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     6.380|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +------+------+------+------+---------+
+    |   Latency   |   Interval  | Pipeline|
+    |  min |  max |  min |  max |   Type  |
+    +------+------+------+------+---------+
+    |  2321|  2321|  2321|  2321|   none  |
+    +------+------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+------+------+----------+-----------+-----------+------+----------+
+        |                   |   Latency   | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+------+------+----------+-----------+-----------+------+----------+
+        |- OUTPUT_ROW       |  2320|  2320|       290|          -|          -|     8|    no    |
+        | + OUTPUT_COL      |   288|   288|        36|          -|          -|     8|    no    |
+        |  ++ KERNEL_ROW    |    33|    33|        11|          -|          -|     3|    no    |
+        |   +++ KERNEL_COL  |     9|     9|         3|          -|          -|     3|    no    |
+        +-------------------+------+------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond3)
+3 --> 
+	4  / (!exitcond2)
+	2  / (exitcond2)
+4 --> 
+	5  / (!exitcond1)
+	8  / (exitcond1)
+5 --> 
+	6  / (!exitcond)
+	4  / (exitcond)
+6 --> 
+	7  / true
+7 --> 
+	5  / true
+8 --> 
+	3  / true
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([8 x i16]* %res_7), !map !7"   --->   Operation 9 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([8 x i16]* %res_6), !map !14"   --->   Operation 10 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([8 x i16]* %res_5), !map !20"   --->   Operation 11 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([8 x i16]* %res_4), !map !26"   --->   Operation 12 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([8 x i16]* %res_3), !map !32"   --->   Operation 13 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([8 x i16]* %res_2), !map !38"   --->   Operation 14 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([8 x i16]* %res_1), !map !44"   --->   Operation 15 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([8 x i16]* %res_0), !map !50"   --->   Operation 16 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([3 x i8]* %b_2), !map !56"   --->   Operation 17 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([3 x i8]* %b_1), !map !62"   --->   Operation 18 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([3 x i8]* %b_0), !map !67"   --->   Operation 19 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i8]* %a_9), !map !72"   --->   Operation 20 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i8]* %a_8), !map !79"   --->   Operation 21 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i8]* %a_7), !map !85"   --->   Operation 22 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i8]* %a_6), !map !90"   --->   Operation 23 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i8]* %a_5), !map !95"   --->   Operation 24 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i8]* %a_4), !map !100"   --->   Operation 25 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i8]* %a_3), !map !105"   --->   Operation 26 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i8]* %a_2), !map !110"   --->   Operation 27 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i8]* %a_1), !map !115"   --->   Operation 28 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i8]* %a_0), !map !120"   --->   Operation 29 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([12 x i8]* @matrix_conv_str) nounwind"   --->   Operation 30 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (1.76ns)   --->   "br label %1" [final_project/matrix_conv.cpp:25]   --->   Operation 31 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 1.76>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%i = phi i4 [ 0, %0 ], [ %i_1, %12 ]"   --->   Operation 32 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (1.30ns)   --->   "%exitcond3 = icmp eq i4 %i, -8" [final_project/matrix_conv.cpp:25]   --->   Operation 33 'icmp' 'exitcond3' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8) nounwind"   --->   Operation 34 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (1.73ns)   --->   "%i_1 = add i4 %i, 1" [final_project/matrix_conv.cpp:25]   --->   Operation 35 'add' 'i_1' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "br i1 %exitcond3, label %13, label %2" [final_project/matrix_conv.cpp:25]   --->   Operation 36 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([11 x i8]* @p_str2) nounwind" [final_project/matrix_conv.cpp:25]   --->   Operation 37 'specloopname' <Predicate = (!exitcond3)> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([11 x i8]* @p_str2) nounwind" [final_project/matrix_conv.cpp:25]   --->   Operation 38 'specregionbegin' 'tmp' <Predicate = (!exitcond3)> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%tmp_12 = trunc i4 %i to i3" [final_project/matrix_conv.cpp:34]   --->   Operation 39 'trunc' 'tmp_12' <Predicate = (!exitcond3)> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (1.76ns)   --->   "br label %3" [final_project/matrix_conv.cpp:26]   --->   Operation 40 'br' <Predicate = (!exitcond3)> <Delay = 1.76>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "ret void" [final_project/matrix_conv.cpp:38]   --->   Operation 41 'ret' <Predicate = (exitcond3)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 1.76>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%j = phi i4 [ 0, %2 ], [ %j_1, %11 ]"   --->   Operation 42 'phi' 'j' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (1.30ns)   --->   "%exitcond2 = icmp eq i4 %j, -8" [final_project/matrix_conv.cpp:26]   --->   Operation 43 'icmp' 'exitcond2' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%empty_2 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8) nounwind"   --->   Operation 44 'speclooptripcount' 'empty_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 45 [1/1] (1.73ns)   --->   "%j_1 = add i4 %j, 1" [final_project/matrix_conv.cpp:26]   --->   Operation 45 'add' 'j_1' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "br i1 %exitcond2, label %12, label %4" [final_project/matrix_conv.cpp:26]   --->   Operation 46 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([11 x i8]* @p_str3) nounwind" [final_project/matrix_conv.cpp:26]   --->   Operation 47 'specloopname' <Predicate = (!exitcond2)> <Delay = 0.00>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%tmp_4 = call i32 (...)* @_ssdm_op_SpecRegionBegin([11 x i8]* @p_str3) nounwind" [final_project/matrix_conv.cpp:26]   --->   Operation 48 'specregionbegin' 'tmp_4' <Predicate = (!exitcond2)> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (1.76ns)   --->   "br label %5" [final_project/matrix_conv.cpp:28]   --->   Operation 49 'br' <Predicate = (!exitcond2)> <Delay = 1.76>
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%empty_7 = call i32 (...)* @_ssdm_op_SpecRegionEnd([11 x i8]* @p_str2, i32 %tmp) nounwind" [final_project/matrix_conv.cpp:36]   --->   Operation 50 'specregionend' 'empty_7' <Predicate = (exitcond2)> <Delay = 0.00>
+ST_3 : Operation 51 [1/1] (0.00ns)   --->   "br label %1" [final_project/matrix_conv.cpp:25]   --->   Operation 51 'br' <Predicate = (exitcond2)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 2.32>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%sum = phi i16 [ 0, %4 ], [ %sum_1, %9 ]" [final_project/matrix_conv.cpp:30]   --->   Operation 52 'phi' 'sum' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%m = phi i2 [ 0, %4 ], [ %m_1, %9 ]"   --->   Operation 53 'phi' 'm' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 54 [1/1] (0.95ns)   --->   "%exitcond1 = icmp eq i2 %m, -1" [final_project/matrix_conv.cpp:28]   --->   Operation 54 'icmp' 'exitcond1' <Predicate = true> <Delay = 0.95> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%empty_3 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3) nounwind"   --->   Operation 55 'speclooptripcount' 'empty_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 56 [1/1] (1.56ns)   --->   "%m_1 = add i2 %m, 1" [final_project/matrix_conv.cpp:28]   --->   Operation 56 'add' 'm_1' <Predicate = true> <Delay = 1.56> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 57 [1/1] (0.00ns)   --->   "br i1 %exitcond1, label %10, label %6" [final_project/matrix_conv.cpp:28]   --->   Operation 57 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 58 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([11 x i8]* @p_str4) nounwind" [final_project/matrix_conv.cpp:28]   --->   Operation 58 'specloopname' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_4 : Operation 59 [1/1] (0.00ns)   --->   "%tmp_5 = call i32 (...)* @_ssdm_op_SpecRegionBegin([11 x i8]* @p_str4) nounwind" [final_project/matrix_conv.cpp:28]   --->   Operation 59 'specregionbegin' 'tmp_5' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_4 : Operation 60 [1/1] (0.00ns)   --->   "%tmp_6 = zext i2 %m to i4" [final_project/matrix_conv.cpp:28]   --->   Operation 60 'zext' 'tmp_6' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_4 : Operation 61 [1/1] (1.73ns)   --->   "%tmp_4_t = add i4 %tmp_6, %i" [final_project/matrix_conv.cpp:30]   --->   Operation 61 'add' 'tmp_4_t' <Predicate = (!exitcond1)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 62 [1/1] (1.76ns)   --->   "br label %7" [final_project/matrix_conv.cpp:29]   --->   Operation 62 'br' <Predicate = (!exitcond1)> <Delay = 1.76>
+ST_4 : Operation 63 [1/1] (0.00ns)   --->   "%tmp_2 = zext i4 %j to i64" [final_project/matrix_conv.cpp:34]   --->   Operation 63 'zext' 'tmp_2' <Predicate = (exitcond1)> <Delay = 0.00>
+ST_4 : Operation 64 [1/1] (0.00ns)   --->   "%res_0_addr = getelementptr [8 x i16]* %res_0, i64 0, i64 %tmp_2" [final_project/matrix_conv.cpp:34]   --->   Operation 64 'getelementptr' 'res_0_addr' <Predicate = (exitcond1)> <Delay = 0.00>
+ST_4 : Operation 65 [1/1] (0.00ns)   --->   "%res_1_addr = getelementptr [8 x i16]* %res_1, i64 0, i64 %tmp_2" [final_project/matrix_conv.cpp:34]   --->   Operation 65 'getelementptr' 'res_1_addr' <Predicate = (exitcond1)> <Delay = 0.00>
+ST_4 : Operation 66 [1/1] (0.00ns)   --->   "%res_2_addr = getelementptr [8 x i16]* %res_2, i64 0, i64 %tmp_2" [final_project/matrix_conv.cpp:34]   --->   Operation 66 'getelementptr' 'res_2_addr' <Predicate = (exitcond1)> <Delay = 0.00>
+ST_4 : Operation 67 [1/1] (0.00ns)   --->   "%res_3_addr = getelementptr [8 x i16]* %res_3, i64 0, i64 %tmp_2" [final_project/matrix_conv.cpp:34]   --->   Operation 67 'getelementptr' 'res_3_addr' <Predicate = (exitcond1)> <Delay = 0.00>
+ST_4 : Operation 68 [1/1] (0.00ns)   --->   "%res_4_addr = getelementptr [8 x i16]* %res_4, i64 0, i64 %tmp_2" [final_project/matrix_conv.cpp:34]   --->   Operation 68 'getelementptr' 'res_4_addr' <Predicate = (exitcond1)> <Delay = 0.00>
+ST_4 : Operation 69 [1/1] (0.00ns)   --->   "%res_5_addr = getelementptr [8 x i16]* %res_5, i64 0, i64 %tmp_2" [final_project/matrix_conv.cpp:34]   --->   Operation 69 'getelementptr' 'res_5_addr' <Predicate = (exitcond1)> <Delay = 0.00>
+ST_4 : Operation 70 [1/1] (0.00ns)   --->   "%res_6_addr = getelementptr [8 x i16]* %res_6, i64 0, i64 %tmp_2" [final_project/matrix_conv.cpp:34]   --->   Operation 70 'getelementptr' 'res_6_addr' <Predicate = (exitcond1)> <Delay = 0.00>
+ST_4 : Operation 71 [1/1] (0.00ns)   --->   "%res_7_addr = getelementptr [8 x i16]* %res_7, i64 0, i64 %tmp_2" [final_project/matrix_conv.cpp:34]   --->   Operation 71 'getelementptr' 'res_7_addr' <Predicate = (exitcond1)> <Delay = 0.00>
+ST_4 : Operation 72 [1/1] (1.36ns)   --->   "switch i3 %tmp_12, label %branch7 [
+    i3 0, label %branch0
+    i3 1, label %branch1
+    i3 2, label %branch2
+    i3 3, label %branch3
+    i3 -4, label %branch4
+    i3 -3, label %branch5
+    i3 -2, label %branch6
+  ]" [final_project/matrix_conv.cpp:34]   --->   Operation 72 'switch' <Predicate = (exitcond1)> <Delay = 1.36>
+ST_4 : Operation 73 [1/1] (2.32ns)   --->   "store i16 %sum, i16* %res_6_addr, align 2" [final_project/matrix_conv.cpp:34]   --->   Operation 73 'store' <Predicate = (exitcond1 & tmp_12 == 6)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_4 : Operation 74 [1/1] (0.00ns)   --->   "br label %11" [final_project/matrix_conv.cpp:34]   --->   Operation 74 'br' <Predicate = (exitcond1 & tmp_12 == 6)> <Delay = 0.00>
+ST_4 : Operation 75 [1/1] (2.32ns)   --->   "store i16 %sum, i16* %res_5_addr, align 2" [final_project/matrix_conv.cpp:34]   --->   Operation 75 'store' <Predicate = (exitcond1 & tmp_12 == 5)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_4 : Operation 76 [1/1] (0.00ns)   --->   "br label %11" [final_project/matrix_conv.cpp:34]   --->   Operation 76 'br' <Predicate = (exitcond1 & tmp_12 == 5)> <Delay = 0.00>
+ST_4 : Operation 77 [1/1] (2.32ns)   --->   "store i16 %sum, i16* %res_4_addr, align 2" [final_project/matrix_conv.cpp:34]   --->   Operation 77 'store' <Predicate = (exitcond1 & tmp_12 == 4)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_4 : Operation 78 [1/1] (0.00ns)   --->   "br label %11" [final_project/matrix_conv.cpp:34]   --->   Operation 78 'br' <Predicate = (exitcond1 & tmp_12 == 4)> <Delay = 0.00>
+ST_4 : Operation 79 [1/1] (2.32ns)   --->   "store i16 %sum, i16* %res_3_addr, align 2" [final_project/matrix_conv.cpp:34]   --->   Operation 79 'store' <Predicate = (exitcond1 & tmp_12 == 3)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_4 : Operation 80 [1/1] (0.00ns)   --->   "br label %11" [final_project/matrix_conv.cpp:34]   --->   Operation 80 'br' <Predicate = (exitcond1 & tmp_12 == 3)> <Delay = 0.00>
+ST_4 : Operation 81 [1/1] (2.32ns)   --->   "store i16 %sum, i16* %res_2_addr, align 2" [final_project/matrix_conv.cpp:34]   --->   Operation 81 'store' <Predicate = (exitcond1 & tmp_12 == 2)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_4 : Operation 82 [1/1] (0.00ns)   --->   "br label %11" [final_project/matrix_conv.cpp:34]   --->   Operation 82 'br' <Predicate = (exitcond1 & tmp_12 == 2)> <Delay = 0.00>
+ST_4 : Operation 83 [1/1] (2.32ns)   --->   "store i16 %sum, i16* %res_1_addr, align 2" [final_project/matrix_conv.cpp:34]   --->   Operation 83 'store' <Predicate = (exitcond1 & tmp_12 == 1)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_4 : Operation 84 [1/1] (0.00ns)   --->   "br label %11" [final_project/matrix_conv.cpp:34]   --->   Operation 84 'br' <Predicate = (exitcond1 & tmp_12 == 1)> <Delay = 0.00>
+ST_4 : Operation 85 [1/1] (2.32ns)   --->   "store i16 %sum, i16* %res_0_addr, align 2" [final_project/matrix_conv.cpp:34]   --->   Operation 85 'store' <Predicate = (exitcond1 & tmp_12 == 0)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_4 : Operation 86 [1/1] (0.00ns)   --->   "br label %11" [final_project/matrix_conv.cpp:34]   --->   Operation 86 'br' <Predicate = (exitcond1 & tmp_12 == 0)> <Delay = 0.00>
+ST_4 : Operation 87 [1/1] (2.32ns)   --->   "store i16 %sum, i16* %res_7_addr, align 2" [final_project/matrix_conv.cpp:34]   --->   Operation 87 'store' <Predicate = (exitcond1 & tmp_12 == 7)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_4 : Operation 88 [1/1] (0.00ns)   --->   "br label %11" [final_project/matrix_conv.cpp:34]   --->   Operation 88 'br' <Predicate = (exitcond1 & tmp_12 == 7)> <Delay = 0.00>
+
+State 5 <SV = 4> <Delay = 4.05>
+ST_5 : Operation 89 [1/1] (0.00ns)   --->   "%sum_1 = phi i16 [ %sum, %6 ], [ %sum_2, %8 ]"   --->   Operation 89 'phi' 'sum_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 90 [1/1] (0.00ns)   --->   "%n = phi i2 [ 0, %6 ], [ %n_1, %8 ]"   --->   Operation 90 'phi' 'n' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 91 [1/1] (0.00ns)   --->   "%n_cast2 = zext i2 %n to i4" [final_project/matrix_conv.cpp:29]   --->   Operation 91 'zext' 'n_cast2' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 92 [1/1] (0.95ns)   --->   "%exitcond = icmp eq i2 %n, -1" [final_project/matrix_conv.cpp:29]   --->   Operation 92 'icmp' 'exitcond' <Predicate = true> <Delay = 0.95> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 93 [1/1] (0.00ns)   --->   "%empty_4 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3) nounwind"   --->   Operation 93 'speclooptripcount' 'empty_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 94 [1/1] (1.56ns)   --->   "%n_1 = add i2 %n, 1" [final_project/matrix_conv.cpp:29]   --->   Operation 94 'add' 'n_1' <Predicate = true> <Delay = 1.56> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 95 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %9, label %8" [final_project/matrix_conv.cpp:29]   --->   Operation 95 'br' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 96 [1/1] (1.73ns)   --->   "%tmp_8 = add i4 %n_cast2, %j" [final_project/matrix_conv.cpp:30]   --->   Operation 96 'add' 'tmp_8' <Predicate = (!exitcond)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 97 [1/1] (0.00ns)   --->   "%tmp_9 = zext i4 %tmp_8 to i64" [final_project/matrix_conv.cpp:30]   --->   Operation 97 'zext' 'tmp_9' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 98 [1/1] (0.00ns)   --->   "%a_0_addr = getelementptr [10 x i8]* %a_0, i64 0, i64 %tmp_9" [final_project/matrix_conv.cpp:30]   --->   Operation 98 'getelementptr' 'a_0_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 99 [2/2] (2.32ns)   --->   "%a_0_load = load i8* %a_0_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 99 'load' 'a_0_load' <Predicate = (!exitcond)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_5 : Operation 100 [1/1] (0.00ns)   --->   "%a_1_addr = getelementptr [10 x i8]* %a_1, i64 0, i64 %tmp_9" [final_project/matrix_conv.cpp:30]   --->   Operation 100 'getelementptr' 'a_1_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 101 [2/2] (2.32ns)   --->   "%a_1_load = load i8* %a_1_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 101 'load' 'a_1_load' <Predicate = (!exitcond)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_5 : Operation 102 [1/1] (0.00ns)   --->   "%a_2_addr = getelementptr [10 x i8]* %a_2, i64 0, i64 %tmp_9" [final_project/matrix_conv.cpp:30]   --->   Operation 102 'getelementptr' 'a_2_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 103 [2/2] (2.32ns)   --->   "%a_2_load = load i8* %a_2_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 103 'load' 'a_2_load' <Predicate = (!exitcond)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_5 : Operation 104 [1/1] (0.00ns)   --->   "%a_3_addr = getelementptr [10 x i8]* %a_3, i64 0, i64 %tmp_9" [final_project/matrix_conv.cpp:30]   --->   Operation 104 'getelementptr' 'a_3_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 105 [2/2] (2.32ns)   --->   "%a_3_load = load i8* %a_3_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 105 'load' 'a_3_load' <Predicate = (!exitcond)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_5 : Operation 106 [1/1] (0.00ns)   --->   "%a_4_addr = getelementptr [10 x i8]* %a_4, i64 0, i64 %tmp_9" [final_project/matrix_conv.cpp:30]   --->   Operation 106 'getelementptr' 'a_4_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 107 [2/2] (2.32ns)   --->   "%a_4_load = load i8* %a_4_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 107 'load' 'a_4_load' <Predicate = (!exitcond)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_5 : Operation 108 [1/1] (0.00ns)   --->   "%a_5_addr = getelementptr [10 x i8]* %a_5, i64 0, i64 %tmp_9" [final_project/matrix_conv.cpp:30]   --->   Operation 108 'getelementptr' 'a_5_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 109 [2/2] (2.32ns)   --->   "%a_5_load = load i8* %a_5_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 109 'load' 'a_5_load' <Predicate = (!exitcond)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_5 : Operation 110 [1/1] (0.00ns)   --->   "%a_6_addr = getelementptr [10 x i8]* %a_6, i64 0, i64 %tmp_9" [final_project/matrix_conv.cpp:30]   --->   Operation 110 'getelementptr' 'a_6_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 111 [2/2] (2.32ns)   --->   "%a_6_load = load i8* %a_6_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 111 'load' 'a_6_load' <Predicate = (!exitcond)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_5 : Operation 112 [1/1] (0.00ns)   --->   "%a_7_addr = getelementptr [10 x i8]* %a_7, i64 0, i64 %tmp_9" [final_project/matrix_conv.cpp:30]   --->   Operation 112 'getelementptr' 'a_7_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 113 [2/2] (2.32ns)   --->   "%a_7_load = load i8* %a_7_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 113 'load' 'a_7_load' <Predicate = (!exitcond)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_5 : Operation 114 [1/1] (0.00ns)   --->   "%a_8_addr = getelementptr [10 x i8]* %a_8, i64 0, i64 %tmp_9" [final_project/matrix_conv.cpp:30]   --->   Operation 114 'getelementptr' 'a_8_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 115 [2/2] (2.32ns)   --->   "%a_8_load = load i8* %a_8_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 115 'load' 'a_8_load' <Predicate = (!exitcond)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_5 : Operation 116 [1/1] (0.00ns)   --->   "%a_9_addr = getelementptr [10 x i8]* %a_9, i64 0, i64 %tmp_9" [final_project/matrix_conv.cpp:30]   --->   Operation 116 'getelementptr' 'a_9_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 117 [2/2] (2.32ns)   --->   "%a_9_load = load i8* %a_9_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 117 'load' 'a_9_load' <Predicate = (!exitcond)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_5 : Operation 118 [1/1] (0.00ns)   --->   "%tmp_1 = zext i2 %n to i64" [final_project/matrix_conv.cpp:30]   --->   Operation 118 'zext' 'tmp_1' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 119 [1/1] (0.00ns)   --->   "%b_0_addr = getelementptr [3 x i8]* %b_0, i64 0, i64 %tmp_1" [final_project/matrix_conv.cpp:30]   --->   Operation 119 'getelementptr' 'b_0_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 120 [2/2] (2.32ns)   --->   "%b_0_load = load i8* %b_0_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 120 'load' 'b_0_load' <Predicate = (!exitcond)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_5 : Operation 121 [1/1] (0.00ns)   --->   "%b_1_addr = getelementptr [3 x i8]* %b_1, i64 0, i64 %tmp_1" [final_project/matrix_conv.cpp:30]   --->   Operation 121 'getelementptr' 'b_1_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 122 [2/2] (2.32ns)   --->   "%b_1_load = load i8* %b_1_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 122 'load' 'b_1_load' <Predicate = (!exitcond)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_5 : Operation 123 [1/1] (0.00ns)   --->   "%b_2_addr = getelementptr [3 x i8]* %b_2, i64 0, i64 %tmp_1" [final_project/matrix_conv.cpp:30]   --->   Operation 123 'getelementptr' 'b_2_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 124 [2/2] (2.32ns)   --->   "%b_2_load = load i8* %b_2_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 124 'load' 'b_2_load' <Predicate = (!exitcond)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_5 : Operation 125 [1/1] (0.00ns)   --->   "%empty_5 = call i32 (...)* @_ssdm_op_SpecRegionEnd([11 x i8]* @p_str4, i32 %tmp_5) nounwind" [final_project/matrix_conv.cpp:32]   --->   Operation 125 'specregionend' 'empty_5' <Predicate = (exitcond)> <Delay = 0.00>
+ST_5 : Operation 126 [1/1] (0.00ns)   --->   "br label %5" [final_project/matrix_conv.cpp:28]   --->   Operation 126 'br' <Predicate = (exitcond)> <Delay = 0.00>
+
+State 6 <SV = 5> <Delay = 4.95>
+ST_6 : Operation 127 [1/2] (2.32ns)   --->   "%a_0_load = load i8* %a_0_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 127 'load' 'a_0_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_6 : Operation 128 [1/2] (2.32ns)   --->   "%a_1_load = load i8* %a_1_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 128 'load' 'a_1_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_6 : Operation 129 [1/2] (2.32ns)   --->   "%a_2_load = load i8* %a_2_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 129 'load' 'a_2_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_6 : Operation 130 [1/2] (2.32ns)   --->   "%a_3_load = load i8* %a_3_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 130 'load' 'a_3_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_6 : Operation 131 [1/2] (2.32ns)   --->   "%a_4_load = load i8* %a_4_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 131 'load' 'a_4_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_6 : Operation 132 [1/2] (2.32ns)   --->   "%a_5_load = load i8* %a_5_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 132 'load' 'a_5_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_6 : Operation 133 [1/2] (2.32ns)   --->   "%a_6_load = load i8* %a_6_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 133 'load' 'a_6_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_6 : Operation 134 [1/2] (2.32ns)   --->   "%a_7_load = load i8* %a_7_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 134 'load' 'a_7_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_6 : Operation 135 [1/2] (2.32ns)   --->   "%a_8_load = load i8* %a_8_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 135 'load' 'a_8_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_6 : Operation 136 [1/2] (2.32ns)   --->   "%a_9_load = load i8* %a_9_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 136 'load' 'a_9_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_6 : Operation 137 [1/1] (2.63ns)   --->   "%tmp_10 = call i8 @_ssdm_op_Mux.ap_auto.10i8.i4(i8 %a_0_load, i8 %a_1_load, i8 %a_2_load, i8 %a_3_load, i8 %a_4_load, i8 %a_5_load, i8 %a_6_load, i8 %a_7_load, i8 %a_8_load, i8 %a_9_load, i4 %tmp_4_t)" [final_project/matrix_conv.cpp:30]   --->   Operation 137 'mux' 'tmp_10' <Predicate = true> <Delay = 2.63> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 138 [1/2] (2.32ns)   --->   "%b_0_load = load i8* %b_0_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 138 'load' 'b_0_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_6 : Operation 139 [1/2] (2.32ns)   --->   "%b_1_load = load i8* %b_1_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 139 'load' 'b_1_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_6 : Operation 140 [1/2] (2.32ns)   --->   "%b_2_load = load i8* %b_2_addr, align 1" [final_project/matrix_conv.cpp:30]   --->   Operation 140 'load' 'b_2_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_6 : Operation 141 [1/1] (1.77ns)   --->   "%tmp_11 = call i8 @_ssdm_op_Mux.ap_auto.3i8.i2(i8 %b_0_load, i8 %b_1_load, i8 %b_2_load, i2 %m)" [final_project/matrix_conv.cpp:30]   --->   Operation 141 'mux' 'tmp_11' <Predicate = true> <Delay = 1.77> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 6.38>
+ST_7 : Operation 142 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([11 x i8]* @p_str5) nounwind" [final_project/matrix_conv.cpp:29]   --->   Operation 142 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 143 [1/1] (0.00ns)   --->   "%tmp_s = sext i8 %tmp_10 to i16" [final_project/matrix_conv.cpp:30]   --->   Operation 143 'sext' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 144 [1/1] (0.00ns)   --->   "%tmp_3 = sext i8 %tmp_11 to i16" [final_project/matrix_conv.cpp:30]   --->   Operation 144 'sext' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 145 [1/1] (3.36ns) (grouped into DSP with root node sum_2)   --->   "%tmp_7 = mul i16 %tmp_3, %tmp_s" [final_project/matrix_conv.cpp:30]   --->   Operation 145 'mul' 'tmp_7' <Predicate = true> <Delay = 3.36> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 146 [1/1] (3.02ns) (root node of the DSP)   --->   "%sum_2 = add i16 %tmp_7, %sum_1" [final_project/matrix_conv.cpp:30]   --->   Operation 146 'add' 'sum_2' <Predicate = true> <Delay = 3.02> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 147 [1/1] (0.00ns)   --->   "br label %7" [final_project/matrix_conv.cpp:29]   --->   Operation 147 'br' <Predicate = true> <Delay = 0.00>
+
+State 8 <SV = 4> <Delay = 0.00>
+ST_8 : Operation 148 [1/1] (0.00ns)   --->   "%empty_6 = call i32 (...)* @_ssdm_op_SpecRegionEnd([11 x i8]* @p_str3, i32 %tmp_4) nounwind" [final_project/matrix_conv.cpp:35]   --->   Operation 148 'specregionend' 'empty_6' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 149 [1/1] (0.00ns)   --->   "br label %3" [final_project/matrix_conv.cpp:26]   --->   Operation 149 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', final_project/matrix_conv.cpp:25) [46]  (1.77 ns)
+
+ <State 2>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('j') with incoming values : ('j', final_project/matrix_conv.cpp:26) [57]  (1.77 ns)
+
+ <State 3>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('sum', final_project/matrix_conv.cpp:30) with incoming values : ('sum', final_project/matrix_conv.cpp:30) [67]  (1.77 ns)
+
+ <State 4>: 2.32ns
+The critical path consists of the following:
+	'phi' operation ('sum', final_project/matrix_conv.cpp:30) with incoming values : ('sum', final_project/matrix_conv.cpp:30) [67]  (0 ns)
+	'store' operation (final_project/matrix_conv.cpp:34) of variable 'sum', final_project/matrix_conv.cpp:30 on array 'res_6' [140]  (2.32 ns)
+
+ <State 5>: 4.06ns
+The critical path consists of the following:
+	'phi' operation ('n') with incoming values : ('n', final_project/matrix_conv.cpp:29) [81]  (0 ns)
+	'add' operation ('tmp_8', final_project/matrix_conv.cpp:30) [89]  (1.74 ns)
+	'getelementptr' operation ('a_0_addr', final_project/matrix_conv.cpp:30) [91]  (0 ns)
+	'load' operation ('a_0_load', final_project/matrix_conv.cpp:30) on array 'a_0' [92]  (2.32 ns)
+
+ <State 6>: 4.95ns
+The critical path consists of the following:
+	'load' operation ('a_0_load', final_project/matrix_conv.cpp:30) on array 'a_0' [92]  (2.32 ns)
+	'mux' operation ('tmp_10', final_project/matrix_conv.cpp:30) [111]  (2.63 ns)
+
+ <State 7>: 6.38ns
+The critical path consists of the following:
+	'mul' operation of DSP[123] ('tmp_7', final_project/matrix_conv.cpp:30) [122]  (3.36 ns)
+	'add' operation of DSP[123] ('sum', final_project/matrix_conv.cpp:30) [123]  (3.02 ns)
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

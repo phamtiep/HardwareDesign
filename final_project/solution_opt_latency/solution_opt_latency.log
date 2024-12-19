@@ -1,0 +1,241 @@
+==============================================================
+File generated on Wed Dec 18 21:23:24 +0700 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'final_project/matrix_conv.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 103.293 ; gain = 18.395
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 103.293 ; gain = 18.395
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 104.480 ; gain = 19.582
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 104.734 ; gain = 19.836
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'matrix_conv' (final_project/matrix_conv.cpp:71).
+INFO: [HLS 200-489] Unrolling loop 'OUTPUT_ROW' (final_project/matrix_conv.cpp:89) in function 'matrix_conv' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'OUTPUT_COL' (final_project/matrix_conv.cpp:90) in function 'matrix_conv' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'KERNEL_ROW' (final_project/matrix_conv.cpp:92) in function 'matrix_conv' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'KERNEL_COL' (final_project/matrix_conv.cpp:93) in function 'matrix_conv' completely with a factor of 3.
+INFO: [XFORM 203-101] Partitioning array 'a' (final_project/matrix_conv.cpp:71) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'b' (final_project/matrix_conv.cpp:72) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'res' (final_project/matrix_conv.cpp:73) in dimension 1 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'matrix_conv' (final_project/matrix_conv.cpp:71)...512 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 129.668 ; gain = 44.770
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 129.668 ; gain = 44.770
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrix_conv' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrix_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'matrix_conv'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('a_0_load_2', final_project/matrix_conv.cpp:94) on array 'a_0' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'a_0'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 5, Depth = 9.
+WARNING: [SCHED 204-21] Estimated clock period (11.477ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'matrix_conv' consists of the following:
+	'mul' operation of DSP[196] ('tmp_7_0_3_2_2', final_project/matrix_conv.cpp:94) [191]  (3.36 ns)
+	'add' operation of DSP[196] ('tmp27', final_project/matrix_conv.cpp:94) [196]  (3.02 ns)
+	'add' operation of DSP[197] ('tmp26', final_project/matrix_conv.cpp:94) [197]  (3.02 ns)
+	'add' operation ('tmp24', final_project/matrix_conv.cpp:94) [198]  (2.08 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 25.699 seconds; current allocated memory: 90.816 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.287 seconds; current allocated memory: 95.832 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrix_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/a_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/a_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/a_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/a_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/a_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/a_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/a_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/a_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/a_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/a_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/b_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/b_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/b_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/res_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/res_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/res_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/res_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/res_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/res_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/res_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/res_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrix_conv' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'matrix_conv_mac_muladd_8s_8s_16ns_16_1_1' to 'matrix_conv_mac_mbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'matrix_conv_mac_muladd_8s_8s_16s_16_1_1' to 'matrix_conv_mac_mcud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'matrix_conv_mac_mbkb': 256 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'matrix_conv_mac_mcud': 64 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrix_conv'.
+INFO: [HLS 200-111]  Elapsed time: 1.946 seconds; current allocated memory: 106.501 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:12 ; elapsed = 00:00:35 . Memory (MB): peak = 190.359 ; gain = 105.461
+INFO: [SYSC 207-301] Generating SystemC RTL for matrix_conv.
+INFO: [VHDL 208-304] Generating VHDL RTL for matrix_conv.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrix_conv.
+INFO: [HLS 200-112] Total elapsed time: 35.159 seconds; peak allocated memory: 106.501 MB.
+==============================================================
+File generated on Wed Dec 18 22:00:07 +0700 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'final_project/matrix_conv.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 102.695 ; gain = 17.484
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 102.695 ; gain = 17.484
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 103.973 ; gain = 18.762
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 104.234 ; gain = 19.023
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'matrix_conv' (final_project/matrix_conv.cpp:71).
+INFO: [HLS 200-489] Unrolling loop 'OUTPUT_ROW' (final_project/matrix_conv.cpp:89) in function 'matrix_conv' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'OUTPUT_COL' (final_project/matrix_conv.cpp:90) in function 'matrix_conv' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'KERNEL_ROW' (final_project/matrix_conv.cpp:92) in function 'matrix_conv' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'KERNEL_COL' (final_project/matrix_conv.cpp:93) in function 'matrix_conv' completely with a factor of 3.
+INFO: [XFORM 203-11] Balancing expressions in function 'matrix_conv' (final_project/matrix_conv.cpp:71)...512 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 131.086 ; gain = 45.875
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 131.086 ; gain = 45.875
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrix_conv' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrix_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'matrix_conv'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('a_load_2', final_project/matrix_conv.cpp:94) on array 'a' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'a'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 50, Depth = 54.
+WARNING: [SCHED 204-21] Estimated clock period (11.477ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'matrix_conv' consists of the following:
+	'mul' operation of DSP[443] ('tmp_7_1_1_2_2', final_project/matrix_conv.cpp:94) [438]  (3.36 ns)
+	'add' operation of DSP[443] ('tmp69', final_project/matrix_conv.cpp:94) [443]  (3.02 ns)
+	'add' operation of DSP[444] ('tmp68', final_project/matrix_conv.cpp:94) [444]  (3.02 ns)
+	'add' operation ('tmp66', final_project/matrix_conv.cpp:94) [445]  (2.08 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 12.693 seconds; current allocated memory: 91.738 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.314 seconds; current allocated memory: 96.831 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrix_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/a' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/b' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/res' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrix_conv' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'matrix_conv_mac_muladd_8s_8s_16ns_16_1_1' to 'matrix_conv_mac_mbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'matrix_conv_mac_muladd_8s_8s_16s_16_1_1' to 'matrix_conv_mac_mcud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'matrix_conv_mac_mbkb': 256 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'matrix_conv_mac_mcud': 64 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrix_conv'.
+INFO: [HLS 200-111]  Elapsed time: 1.779 seconds; current allocated memory: 108.326 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 189.371 ; gain = 104.160
+INFO: [SYSC 207-301] Generating SystemC RTL for matrix_conv.
+INFO: [VHDL 208-304] Generating VHDL RTL for matrix_conv.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrix_conv.
+INFO: [HLS 200-112] Total elapsed time: 21.98 seconds; peak allocated memory: 108.326 MB.
+==============================================================
+File generated on Thu Dec 19 03:02:05 +0700 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'final_project/matrix_conv.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 102.965 ; gain = 17.914
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 102.965 ; gain = 17.914
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 104.371 ; gain = 19.320
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 104.629 ; gain = 19.578
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'matrix_conv' (final_project/matrix_conv.cpp:7).
+INFO: [HLS 200-489] Unrolling loop 'OUTPUT_ROW' (final_project/matrix_conv.cpp:25) in function 'matrix_conv' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'OUTPUT_COL' (final_project/matrix_conv.cpp:26) in function 'matrix_conv' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'KERNEL_ROW' (final_project/matrix_conv.cpp:28) in function 'matrix_conv' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'KERNEL_COL' (final_project/matrix_conv.cpp:29) in function 'matrix_conv' completely with a factor of 3.
+INFO: [XFORM 203-101] Partitioning array 'a' (final_project/matrix_conv.cpp:7) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'b' (final_project/matrix_conv.cpp:8) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'res' (final_project/matrix_conv.cpp:9) in dimension 1 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'matrix_conv' (final_project/matrix_conv.cpp:7)...512 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 130.363 ; gain = 45.312
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 130.363 ; gain = 45.312
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrix_conv' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrix_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'matrix_conv'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('a_0_load_2', final_project/matrix_conv.cpp:30) on array 'a_0' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'a_0'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 5, Depth = 9.
+WARNING: [SCHED 204-21] Estimated clock period (11.477ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'matrix_conv' consists of the following:
+	'mul' operation of DSP[196] ('tmp_7_0_3_2_2', final_project/matrix_conv.cpp:30) [191]  (3.36 ns)
+	'add' operation of DSP[196] ('tmp27', final_project/matrix_conv.cpp:30) [196]  (3.02 ns)
+	'add' operation of DSP[197] ('tmp26', final_project/matrix_conv.cpp:30) [197]  (3.02 ns)
+	'add' operation ('tmp24', final_project/matrix_conv.cpp:30) [198]  (2.08 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 27.316 seconds; current allocated memory: 90.831 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.232 seconds; current allocated memory: 95.847 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrix_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/a_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/a_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/a_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/a_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/a_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/a_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/a_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/a_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/a_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/a_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/b_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/b_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/b_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/res_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/res_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/res_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/res_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/res_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/res_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/res_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_conv/res_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrix_conv' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'matrix_conv_mac_muladd_8s_8s_16ns_16_1_1' to 'matrix_conv_mac_mbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'matrix_conv_mac_muladd_8s_8s_16s_16_1_1' to 'matrix_conv_mac_mcud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'matrix_conv_mac_mbkb': 256 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'matrix_conv_mac_mcud': 64 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrix_conv'.
+INFO: [HLS 200-111]  Elapsed time: 1.808 seconds; current allocated memory: 106.532 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:10 ; elapsed = 00:00:36 . Memory (MB): peak = 190.152 ; gain = 105.102
+INFO: [SYSC 207-301] Generating SystemC RTL for matrix_conv.
+INFO: [VHDL 208-304] Generating VHDL RTL for matrix_conv.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrix_conv.
+INFO: [HLS 200-112] Total elapsed time: 36.334 seconds; peak allocated memory: 106.532 MB.

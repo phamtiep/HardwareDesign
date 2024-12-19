@@ -1,0 +1,41 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="matrix_conv" label="OUTPUT_ROW" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrix_conv" label="OUTPUT_COL" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrix_conv" label="KERNEL_ROW" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrix_conv" label="KERNEL_COL" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrix_conv" label="" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="matrix_conv" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="b" positionalBoolean="4"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="matrix_conv" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="a" positionalBoolean="4"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="matrix_conv" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="res" positionalBoolean="4"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

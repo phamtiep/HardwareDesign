@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Dec 19 05:42:33 2024
+# Process ID: 10972
+# Current directory: E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog
+# Command line: vivado.exe -source open_wave.tcl
+# Log file: E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/vivado.log
+# Journal file: E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+open_wave_config E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/matrix_conv.wcfg
+save_wave_config {E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/matrix_conv.wcfg}
+close_sim

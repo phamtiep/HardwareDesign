@@ -1,0 +1,439 @@
+INFO: [HLS 200-10] Running 'E:/phan_mem_hoc/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'PHAM TIEP' on host '05252zas' (Windows NT_amd64 version 6.2) on Thu Dec 19 05:31:35 +0700 2024
+INFO: [HLS 200-10] In directory 'E:/laptrinh/vivado'
+INFO: [HLS 200-10] Opening project 'E:/laptrinh/vivado/final_project'.
+INFO: [HLS 200-10] Opening solution 'E:/laptrinh/vivado/final_project/tradeoff_balance'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "E:/phan_mem_hoc/Vivado/2018.3/msys64/mingw64/bin/g++"
+   Compiling apatb_matrix_conv.cpp
+   Compiling matrix_conv_test.cpp_pre.cpp.tb.cpp
+   Compiling matrix_conv.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+{
+{5136,5361,5586,5811,6036,6261,6486,6711}
+{7386,7611,7836,8061,8286,8511,8736,8961}
+{9636,9861,10086,10311,10536,10761,10986,11211}
+{11886,12111,12336,12561,12786,13011,13236,13461}
+{14136,14361,14586,14811,15036,15261,15486,15711}
+{16386,16611,16836,17061,17286,17511,17736,17961}
+{18636,18861,19086,19311,19536,19761,19986,20211}
+{20886,21111,21336,21561,21786,22011,22236,22461}
+}
+Test passed.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+E:\laptrinh\vivado\final_project\tradeoff_balance\sim\verilog>set PATH= 
+
+E:\laptrinh\vivado\final_project\tradeoff_balance\sim\verilog>call E:/phan_mem_hoc/Vivado/2018.3/bin/xelab xil_defaultlib.apatb_matrix_conv_top glbl -prj matrix_conv.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile "E:/phan_mem_hoc/Vivado/2018.3/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s matrix_conv -debug wave 
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "E:/phan_mem_hoc/Vivado/2018.3/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/phan_mem_hoc/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_matrix_conv_top glbl -prj matrix_conv.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile E:/phan_mem_hoc/Vivado/2018.3/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s matrix_conv -debug wave 
+Multi-threading is on. Using 10 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_a_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_a_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_a_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_a_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_a_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_a_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_a_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_a_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_a_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a_8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_a_9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a_9
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_b_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_b_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_b_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_b_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_b_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_b_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_res_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_res_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_res_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_res_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_res_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_res_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_res_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_res_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_res_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_res_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_res_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_res_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_res_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_res_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_res_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_res_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/matrix_conv.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_matrix_conv_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/matrix_conv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_conv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/matrix_conv_mac_mbkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_conv_mac_mbkb_DSP48_0
+INFO: [VRFC 10-311] analyzing module matrix_conv_mac_mbkb
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.matrix_conv_mac_mbkb_DSP48_0
+Compiling module xil_defaultlib.matrix_conv_mac_mbkb(ID=1,NUM_ST...
+Compiling module xil_defaultlib.matrix_conv
+Compiling module xil_defaultlib.AESL_automem_a_0
+Compiling module xil_defaultlib.AESL_automem_a_1
+Compiling module xil_defaultlib.AESL_automem_a_2
+Compiling module xil_defaultlib.AESL_automem_a_3
+Compiling module xil_defaultlib.AESL_automem_a_4
+Compiling module xil_defaultlib.AESL_automem_a_5
+Compiling module xil_defaultlib.AESL_automem_a_6
+Compiling module xil_defaultlib.AESL_automem_a_7
+Compiling module xil_defaultlib.AESL_automem_a_8
+Compiling module xil_defaultlib.AESL_automem_a_9
+Compiling module xil_defaultlib.AESL_automem_b_0
+Compiling module xil_defaultlib.AESL_automem_b_1
+Compiling module xil_defaultlib.AESL_automem_b_2
+Compiling module xil_defaultlib.AESL_automem_res_0
+Compiling module xil_defaultlib.AESL_automem_res_1
+Compiling module xil_defaultlib.AESL_automem_res_2
+Compiling module xil_defaultlib.AESL_automem_res_3
+Compiling module xil_defaultlib.AESL_automem_res_4
+Compiling module xil_defaultlib.AESL_automem_res_5
+Compiling module xil_defaultlib.AESL_automem_res_6
+Compiling module xil_defaultlib.AESL_automem_res_7
+Compiling module xil_defaultlib.apatb_matrix_conv_top
+Compiling module work.glbl
+Built simulation snapshot matrix_conv
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/xsim.dir/matrix_conv/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Dec 19 05:31:51 2024...
+
+****** xsim v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/matrix_conv/xsim_script.tcl
+# xsim {matrix_conv} -autoloadwcfg -tclbatch {matrix_conv.tcl}
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source matrix_conv.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set res_group [add_wave_group res(memory) -into $coutputgroup]
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_7_d0 -into $res_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_7_we0 -into $res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_7_ce0 -into $res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_7_address0 -into $res_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_6_d0 -into $res_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_6_we0 -into $res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_6_ce0 -into $res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_6_address0 -into $res_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_5_d0 -into $res_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_5_we0 -into $res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_5_ce0 -into $res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_5_address0 -into $res_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_4_d0 -into $res_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_4_we0 -into $res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_4_ce0 -into $res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_4_address0 -into $res_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_3_d0 -into $res_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_3_we0 -into $res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_3_ce0 -into $res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_3_address0 -into $res_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_2_d0 -into $res_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_2_we0 -into $res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_2_ce0 -into $res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_2_address0 -into $res_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_1_d0 -into $res_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_1_we0 -into $res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_1_ce0 -into $res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_1_address0 -into $res_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_0_d0 -into $res_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_0_we0 -into $res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_0_ce0 -into $res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/res_0_address0 -into $res_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set b_group [add_wave_group b(memory) -into $cinputgroup]
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/b_2_q1 -into $b_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/b_2_ce1 -into $b_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/b_2_address1 -into $b_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/b_2_q0 -into $b_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/b_2_ce0 -into $b_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/b_2_address0 -into $b_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/b_1_q1 -into $b_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/b_1_ce1 -into $b_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/b_1_address1 -into $b_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/b_1_q0 -into $b_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/b_1_ce0 -into $b_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/b_1_address0 -into $b_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/b_0_q1 -into $b_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/b_0_ce1 -into $b_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/b_0_address1 -into $b_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/b_0_q0 -into $b_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/b_0_ce0 -into $b_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/b_0_address0 -into $b_group -radix hex
+## set a_group [add_wave_group a(memory) -into $cinputgroup]
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_9_q1 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_9_ce1 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_9_address1 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_9_q0 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_9_ce0 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_9_address0 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_8_q1 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_8_ce1 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_8_address1 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_8_q0 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_8_ce0 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_8_address0 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_7_q1 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_7_ce1 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_7_address1 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_7_q0 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_7_ce0 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_7_address0 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_6_q1 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_6_ce1 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_6_address1 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_6_q0 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_6_ce0 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_6_address0 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_5_q1 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_5_ce1 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_5_address1 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_5_q0 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_5_ce0 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_5_address0 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_4_q1 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_4_ce1 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_4_address1 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_4_q0 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_4_ce0 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_4_address0 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_3_q1 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_3_ce1 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_3_address1 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_3_q0 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_3_ce0 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_3_address0 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_2_q1 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_2_ce1 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_2_address1 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_2_q0 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_2_ce0 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_2_address0 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_1_q1 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_1_ce1 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_1_address1 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_1_q0 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_1_ce0 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_1_address0 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_0_q1 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_0_ce1 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_0_address1 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_0_q0 -into $a_group -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_0_ce0 -into $a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/a_0_address0 -into $a_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/ap_start -into $blocksiggroup
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/ap_done -into $blocksiggroup
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/ap_idle -into $blocksiggroup
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_matrix_conv_top/AESL_inst_matrix_conv/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_matrix_conv_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_matrix_conv_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_matrix_conv_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_matrix_conv_top/LENGTH_a_0 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrix_conv_top/LENGTH_a_1 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrix_conv_top/LENGTH_a_2 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrix_conv_top/LENGTH_a_3 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrix_conv_top/LENGTH_a_4 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrix_conv_top/LENGTH_a_5 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrix_conv_top/LENGTH_a_6 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrix_conv_top/LENGTH_a_7 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrix_conv_top/LENGTH_a_8 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrix_conv_top/LENGTH_a_9 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrix_conv_top/LENGTH_b_0 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrix_conv_top/LENGTH_b_1 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrix_conv_top/LENGTH_b_2 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrix_conv_top/LENGTH_res_0 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrix_conv_top/LENGTH_res_1 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrix_conv_top/LENGTH_res_2 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrix_conv_top/LENGTH_res_3 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrix_conv_top/LENGTH_res_4 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrix_conv_top/LENGTH_res_5 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrix_conv_top/LENGTH_res_6 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrix_conv_top/LENGTH_res_7 -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_res_group [add_wave_group res(memory) -into $tbcoutputgroup]
+## add_wave /apatb_matrix_conv_top/res_7_d0 -into $tb_res_group -radix hex
+## add_wave /apatb_matrix_conv_top/res_7_we0 -into $tb_res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/res_7_ce0 -into $tb_res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/res_7_address0 -into $tb_res_group -radix hex
+## add_wave /apatb_matrix_conv_top/res_6_d0 -into $tb_res_group -radix hex
+## add_wave /apatb_matrix_conv_top/res_6_we0 -into $tb_res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/res_6_ce0 -into $tb_res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/res_6_address0 -into $tb_res_group -radix hex
+## add_wave /apatb_matrix_conv_top/res_5_d0 -into $tb_res_group -radix hex
+## add_wave /apatb_matrix_conv_top/res_5_we0 -into $tb_res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/res_5_ce0 -into $tb_res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/res_5_address0 -into $tb_res_group -radix hex
+## add_wave /apatb_matrix_conv_top/res_4_d0 -into $tb_res_group -radix hex
+## add_wave /apatb_matrix_conv_top/res_4_we0 -into $tb_res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/res_4_ce0 -into $tb_res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/res_4_address0 -into $tb_res_group -radix hex
+## add_wave /apatb_matrix_conv_top/res_3_d0 -into $tb_res_group -radix hex
+## add_wave /apatb_matrix_conv_top/res_3_we0 -into $tb_res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/res_3_ce0 -into $tb_res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/res_3_address0 -into $tb_res_group -radix hex
+## add_wave /apatb_matrix_conv_top/res_2_d0 -into $tb_res_group -radix hex
+## add_wave /apatb_matrix_conv_top/res_2_we0 -into $tb_res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/res_2_ce0 -into $tb_res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/res_2_address0 -into $tb_res_group -radix hex
+## add_wave /apatb_matrix_conv_top/res_1_d0 -into $tb_res_group -radix hex
+## add_wave /apatb_matrix_conv_top/res_1_we0 -into $tb_res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/res_1_ce0 -into $tb_res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/res_1_address0 -into $tb_res_group -radix hex
+## add_wave /apatb_matrix_conv_top/res_0_d0 -into $tb_res_group -radix hex
+## add_wave /apatb_matrix_conv_top/res_0_we0 -into $tb_res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/res_0_ce0 -into $tb_res_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/res_0_address0 -into $tb_res_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_b_group [add_wave_group b(memory) -into $tbcinputgroup]
+## add_wave /apatb_matrix_conv_top/b_2_q1 -into $tb_b_group -radix hex
+## add_wave /apatb_matrix_conv_top/b_2_ce1 -into $tb_b_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/b_2_address1 -into $tb_b_group -radix hex
+## add_wave /apatb_matrix_conv_top/b_2_q0 -into $tb_b_group -radix hex
+## add_wave /apatb_matrix_conv_top/b_2_ce0 -into $tb_b_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/b_2_address0 -into $tb_b_group -radix hex
+## add_wave /apatb_matrix_conv_top/b_1_q1 -into $tb_b_group -radix hex
+## add_wave /apatb_matrix_conv_top/b_1_ce1 -into $tb_b_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/b_1_address1 -into $tb_b_group -radix hex
+## add_wave /apatb_matrix_conv_top/b_1_q0 -into $tb_b_group -radix hex
+## add_wave /apatb_matrix_conv_top/b_1_ce0 -into $tb_b_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/b_1_address0 -into $tb_b_group -radix hex
+## add_wave /apatb_matrix_conv_top/b_0_q1 -into $tb_b_group -radix hex
+## add_wave /apatb_matrix_conv_top/b_0_ce1 -into $tb_b_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/b_0_address1 -into $tb_b_group -radix hex
+## add_wave /apatb_matrix_conv_top/b_0_q0 -into $tb_b_group -radix hex
+## add_wave /apatb_matrix_conv_top/b_0_ce0 -into $tb_b_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/b_0_address0 -into $tb_b_group -radix hex
+## set tb_a_group [add_wave_group a(memory) -into $tbcinputgroup]
+## add_wave /apatb_matrix_conv_top/a_9_q1 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_9_ce1 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/a_9_address1 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_9_q0 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_9_ce0 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/a_9_address0 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_8_q1 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_8_ce1 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/a_8_address1 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_8_q0 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_8_ce0 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/a_8_address0 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_7_q1 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_7_ce1 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/a_7_address1 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_7_q0 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_7_ce0 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/a_7_address0 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_6_q1 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_6_ce1 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/a_6_address1 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_6_q0 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_6_ce0 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/a_6_address0 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_5_q1 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_5_ce1 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/a_5_address1 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_5_q0 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_5_ce0 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/a_5_address0 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_4_q1 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_4_ce1 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/a_4_address1 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_4_q0 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_4_ce0 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/a_4_address0 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_3_q1 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_3_ce1 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/a_3_address1 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_3_q0 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_3_ce0 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/a_3_address0 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_2_q1 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_2_ce1 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/a_2_address1 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_2_q0 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_2_ce0 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/a_2_address0 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_1_q1 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_1_ce1 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/a_1_address1 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_1_q0 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_1_ce0 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/a_1_address0 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_0_q1 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_0_ce1 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/a_0_address1 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_0_q0 -into $tb_a_group -radix hex
+## add_wave /apatb_matrix_conv_top/a_0_ce0 -into $tb_a_group -color #ffff00 -radix hex
+## add_wave /apatb_matrix_conv_top/a_0_address0 -into $tb_a_group -radix hex
+## save_wave_config matrix_conv.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "1145000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 1185 ns : File "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/matrix_conv.autotb.v" Line 1375
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Dec 19 05:31:56 2024...
+INFO: [COSIM 212-316] Starting C post checking ...
+{
+{5136,5361,5586,5811,6036,6261,6486,6711}
+{7386,7611,7836,8061,8286,8511,8736,8961}
+{9636,9861,10086,10311,10536,10761,10986,11211}
+{11886,12111,12336,12561,12786,13011,13236,13461}
+{14136,14361,14586,14811,15036,15261,15486,15711}
+{16386,16611,16836,17061,17286,17511,17736,17961}
+{18636,18861,19086,19311,19536,19761,19986,20211}
+{20886,21111,21336,21561,21786,22011,22236,22461}
+}
+Test passed.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

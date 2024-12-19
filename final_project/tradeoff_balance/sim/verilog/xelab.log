@@ -1,0 +1,88 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "E:/phan_mem_hoc/Vivado/2018.3/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/phan_mem_hoc/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_matrix_conv_top glbl -prj matrix_conv.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile E:/phan_mem_hoc/Vivado/2018.3/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s matrix_conv -debug wave 
+Multi-threading is on. Using 10 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_a_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_a_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_a_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_a_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_a_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_a_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_a_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_a_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_a_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a_8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_a_9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a_9
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_b_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_b_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_b_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_b_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_b_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_b_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_res_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_res_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_res_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_res_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_res_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_res_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_res_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_res_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_res_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_res_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_res_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_res_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_res_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_res_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/AESL_automem_res_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_res_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/matrix_conv.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_matrix_conv_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/matrix_conv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_conv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/laptrinh/vivado/final_project/tradeoff_balance/sim/verilog/matrix_conv_mac_mbkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_conv_mac_mbkb_DSP48_0
+INFO: [VRFC 10-311] analyzing module matrix_conv_mac_mbkb
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.matrix_conv_mac_mbkb_DSP48_0
+Compiling module xil_defaultlib.matrix_conv_mac_mbkb(ID=1,NUM_ST...
+Compiling module xil_defaultlib.matrix_conv
+Compiling module xil_defaultlib.AESL_automem_a_0
+Compiling module xil_defaultlib.AESL_automem_a_1
+Compiling module xil_defaultlib.AESL_automem_a_2
+Compiling module xil_defaultlib.AESL_automem_a_3
+Compiling module xil_defaultlib.AESL_automem_a_4
+Compiling module xil_defaultlib.AESL_automem_a_5
+Compiling module xil_defaultlib.AESL_automem_a_6
+Compiling module xil_defaultlib.AESL_automem_a_7
+Compiling module xil_defaultlib.AESL_automem_a_8
+Compiling module xil_defaultlib.AESL_automem_a_9
+Compiling module xil_defaultlib.AESL_automem_b_0
+Compiling module xil_defaultlib.AESL_automem_b_1
+Compiling module xil_defaultlib.AESL_automem_b_2
+Compiling module xil_defaultlib.AESL_automem_res_0
+Compiling module xil_defaultlib.AESL_automem_res_1
+Compiling module xil_defaultlib.AESL_automem_res_2
+Compiling module xil_defaultlib.AESL_automem_res_3
+Compiling module xil_defaultlib.AESL_automem_res_4
+Compiling module xil_defaultlib.AESL_automem_res_5
+Compiling module xil_defaultlib.AESL_automem_res_6
+Compiling module xil_defaultlib.AESL_automem_res_7
+Compiling module xil_defaultlib.apatb_matrix_conv_top
+Compiling module work.glbl
+Built simulation snapshot matrix_conv

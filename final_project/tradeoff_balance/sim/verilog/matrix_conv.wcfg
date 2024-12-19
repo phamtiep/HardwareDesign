@@ -1,0 +1,1427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="matrix_conv.wdb" id="1">
+         <top_modules>
+            <top_module name="apatb_matrix_conv_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="756000001fs"></ZoomEndTime>
+      <Cursor1Time time="1145000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="233"></NameColumnWidth>
+      <ValueColumnWidth column_width="236"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject fp_name="group1" type="group">
+      <obj_property name="label">Design Top Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="group2" type="group">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group3" type="group">
+            <obj_property name="label">res(memory)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_7_d0" type="array">
+               <obj_property name="ElementShortName">res_7_d0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">res_7_d0[15:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_7_we0" type="logic">
+               <obj_property name="ElementShortName">res_7_we0</obj_property>
+               <obj_property name="ObjectShortName">res_7_we0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_7_ce0" type="logic">
+               <obj_property name="ElementShortName">res_7_ce0</obj_property>
+               <obj_property name="ObjectShortName">res_7_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_7_address0" type="array">
+               <obj_property name="ElementShortName">res_7_address0[2:0]</obj_property>
+               <obj_property name="ObjectShortName">res_7_address0[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_6_d0" type="array">
+               <obj_property name="ElementShortName">res_6_d0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">res_6_d0[15:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_6_we0" type="logic">
+               <obj_property name="ElementShortName">res_6_we0</obj_property>
+               <obj_property name="ObjectShortName">res_6_we0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_6_ce0" type="logic">
+               <obj_property name="ElementShortName">res_6_ce0</obj_property>
+               <obj_property name="ObjectShortName">res_6_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_6_address0" type="array">
+               <obj_property name="ElementShortName">res_6_address0[2:0]</obj_property>
+               <obj_property name="ObjectShortName">res_6_address0[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_5_d0" type="array">
+               <obj_property name="ElementShortName">res_5_d0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">res_5_d0[15:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_5_we0" type="logic">
+               <obj_property name="ElementShortName">res_5_we0</obj_property>
+               <obj_property name="ObjectShortName">res_5_we0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_5_ce0" type="logic">
+               <obj_property name="ElementShortName">res_5_ce0</obj_property>
+               <obj_property name="ObjectShortName">res_5_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_5_address0" type="array">
+               <obj_property name="ElementShortName">res_5_address0[2:0]</obj_property>
+               <obj_property name="ObjectShortName">res_5_address0[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_4_d0" type="array">
+               <obj_property name="ElementShortName">res_4_d0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">res_4_d0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_4_we0" type="logic">
+               <obj_property name="ElementShortName">res_4_we0</obj_property>
+               <obj_property name="ObjectShortName">res_4_we0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_4_ce0" type="logic">
+               <obj_property name="ElementShortName">res_4_ce0</obj_property>
+               <obj_property name="ObjectShortName">res_4_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_4_address0" type="array">
+               <obj_property name="ElementShortName">res_4_address0[2:0]</obj_property>
+               <obj_property name="ObjectShortName">res_4_address0[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_3_d0" type="array">
+               <obj_property name="ElementShortName">res_3_d0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">res_3_d0[15:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_3_we0" type="logic">
+               <obj_property name="ElementShortName">res_3_we0</obj_property>
+               <obj_property name="ObjectShortName">res_3_we0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_3_ce0" type="logic">
+               <obj_property name="ElementShortName">res_3_ce0</obj_property>
+               <obj_property name="ObjectShortName">res_3_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_3_address0" type="array">
+               <obj_property name="ElementShortName">res_3_address0[2:0]</obj_property>
+               <obj_property name="ObjectShortName">res_3_address0[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_2_d0" type="array">
+               <obj_property name="ElementShortName">res_2_d0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">res_2_d0[15:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_2_we0" type="logic">
+               <obj_property name="ElementShortName">res_2_we0</obj_property>
+               <obj_property name="ObjectShortName">res_2_we0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_2_ce0" type="logic">
+               <obj_property name="ElementShortName">res_2_ce0</obj_property>
+               <obj_property name="ObjectShortName">res_2_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_2_address0" type="array">
+               <obj_property name="ElementShortName">res_2_address0[2:0]</obj_property>
+               <obj_property name="ObjectShortName">res_2_address0[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_1_d0" type="array">
+               <obj_property name="ElementShortName">res_1_d0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">res_1_d0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_1_we0" type="logic">
+               <obj_property name="ElementShortName">res_1_we0</obj_property>
+               <obj_property name="ObjectShortName">res_1_we0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_1_ce0" type="logic">
+               <obj_property name="ElementShortName">res_1_ce0</obj_property>
+               <obj_property name="ObjectShortName">res_1_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_1_address0" type="array">
+               <obj_property name="ElementShortName">res_1_address0[2:0]</obj_property>
+               <obj_property name="ObjectShortName">res_1_address0[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_0_d0" type="array">
+               <obj_property name="ElementShortName">res_0_d0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">res_0_d0[15:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_0_we0" type="logic">
+               <obj_property name="ElementShortName">res_0_we0</obj_property>
+               <obj_property name="ObjectShortName">res_0_we0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_0_ce0" type="logic">
+               <obj_property name="ElementShortName">res_0_ce0</obj_property>
+               <obj_property name="ObjectShortName">res_0_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/res_0_address0" type="array">
+               <obj_property name="ElementShortName">res_0_address0[2:0]</obj_property>
+               <obj_property name="ObjectShortName">res_0_address0[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group36" type="group">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group37" type="group">
+            <obj_property name="label">b(memory)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/b_2_q1" type="array">
+               <obj_property name="ElementShortName">b_2_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">b_2_q1[7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/b_2_ce1" type="logic">
+               <obj_property name="ElementShortName">b_2_ce1</obj_property>
+               <obj_property name="ObjectShortName">b_2_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/b_2_address1" type="array">
+               <obj_property name="ElementShortName">b_2_address1[1:0]</obj_property>
+               <obj_property name="ObjectShortName">b_2_address1[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/b_2_q0" type="array">
+               <obj_property name="ElementShortName">b_2_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">b_2_q0[7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/b_2_ce0" type="logic">
+               <obj_property name="ElementShortName">b_2_ce0</obj_property>
+               <obj_property name="ObjectShortName">b_2_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/b_2_address0" type="array">
+               <obj_property name="ElementShortName">b_2_address0[1:0]</obj_property>
+               <obj_property name="ObjectShortName">b_2_address0[1:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/b_1_q1" type="array">
+               <obj_property name="ElementShortName">b_1_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">b_1_q1[7:0]</obj_property>
+               <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/b_1_ce1" type="logic">
+               <obj_property name="ElementShortName">b_1_ce1</obj_property>
+               <obj_property name="ObjectShortName">b_1_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/b_1_address1" type="array">
+               <obj_property name="ElementShortName">b_1_address1[1:0]</obj_property>
+               <obj_property name="ObjectShortName">b_1_address1[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/b_1_q0" type="array">
+               <obj_property name="ElementShortName">b_1_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">b_1_q0[7:0]</obj_property>
+               <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/b_1_ce0" type="logic">
+               <obj_property name="ElementShortName">b_1_ce0</obj_property>
+               <obj_property name="ObjectShortName">b_1_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/b_1_address0" type="array">
+               <obj_property name="ElementShortName">b_1_address0[1:0]</obj_property>
+               <obj_property name="ObjectShortName">b_1_address0[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/b_0_q1" type="array">
+               <obj_property name="ElementShortName">b_0_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">b_0_q1[7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/b_0_ce1" type="logic">
+               <obj_property name="ElementShortName">b_0_ce1</obj_property>
+               <obj_property name="ObjectShortName">b_0_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/b_0_address1" type="array">
+               <obj_property name="ElementShortName">b_0_address1[1:0]</obj_property>
+               <obj_property name="ObjectShortName">b_0_address1[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/b_0_q0" type="array">
+               <obj_property name="ElementShortName">b_0_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">b_0_q0[7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/b_0_ce0" type="logic">
+               <obj_property name="ElementShortName">b_0_ce0</obj_property>
+               <obj_property name="ObjectShortName">b_0_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/b_0_address0" type="array">
+               <obj_property name="ElementShortName">b_0_address0[1:0]</obj_property>
+               <obj_property name="ObjectShortName">b_0_address0[1:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group56" type="group">
+            <obj_property name="label">a(memory)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_9_q1" type="array">
+               <obj_property name="ElementShortName">a_9_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_9_q1[7:0]</obj_property>
+               <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_9_ce1" type="logic">
+               <obj_property name="ElementShortName">a_9_ce1</obj_property>
+               <obj_property name="ObjectShortName">a_9_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_9_address1" type="array">
+               <obj_property name="ElementShortName">a_9_address1[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_9_address1[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_9_q0" type="array">
+               <obj_property name="ElementShortName">a_9_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_9_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_9_ce0" type="logic">
+               <obj_property name="ElementShortName">a_9_ce0</obj_property>
+               <obj_property name="ObjectShortName">a_9_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_9_address0" type="array">
+               <obj_property name="ElementShortName">a_9_address0[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_9_address0[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_8_q1" type="array">
+               <obj_property name="ElementShortName">a_8_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_8_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_8_ce1" type="logic">
+               <obj_property name="ElementShortName">a_8_ce1</obj_property>
+               <obj_property name="ObjectShortName">a_8_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_8_address1" type="array">
+               <obj_property name="ElementShortName">a_8_address1[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_8_address1[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_8_q0" type="array">
+               <obj_property name="ElementShortName">a_8_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_8_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_8_ce0" type="logic">
+               <obj_property name="ElementShortName">a_8_ce0</obj_property>
+               <obj_property name="ObjectShortName">a_8_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_8_address0" type="array">
+               <obj_property name="ElementShortName">a_8_address0[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_8_address0[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_7_q1" type="array">
+               <obj_property name="ElementShortName">a_7_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_7_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_7_ce1" type="logic">
+               <obj_property name="ElementShortName">a_7_ce1</obj_property>
+               <obj_property name="ObjectShortName">a_7_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_7_address1" type="array">
+               <obj_property name="ElementShortName">a_7_address1[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_7_address1[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_7_q0" type="array">
+               <obj_property name="ElementShortName">a_7_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_7_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_7_ce0" type="logic">
+               <obj_property name="ElementShortName">a_7_ce0</obj_property>
+               <obj_property name="ObjectShortName">a_7_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_7_address0" type="array">
+               <obj_property name="ElementShortName">a_7_address0[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_7_address0[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_6_q1" type="array">
+               <obj_property name="ElementShortName">a_6_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_6_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_6_ce1" type="logic">
+               <obj_property name="ElementShortName">a_6_ce1</obj_property>
+               <obj_property name="ObjectShortName">a_6_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_6_address1" type="array">
+               <obj_property name="ElementShortName">a_6_address1[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_6_address1[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_6_q0" type="array">
+               <obj_property name="ElementShortName">a_6_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_6_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_6_ce0" type="logic">
+               <obj_property name="ElementShortName">a_6_ce0</obj_property>
+               <obj_property name="ObjectShortName">a_6_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_6_address0" type="array">
+               <obj_property name="ElementShortName">a_6_address0[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_6_address0[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_5_q1" type="array">
+               <obj_property name="ElementShortName">a_5_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_5_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_5_ce1" type="logic">
+               <obj_property name="ElementShortName">a_5_ce1</obj_property>
+               <obj_property name="ObjectShortName">a_5_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_5_address1" type="array">
+               <obj_property name="ElementShortName">a_5_address1[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_5_address1[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_5_q0" type="array">
+               <obj_property name="ElementShortName">a_5_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_5_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_5_ce0" type="logic">
+               <obj_property name="ElementShortName">a_5_ce0</obj_property>
+               <obj_property name="ObjectShortName">a_5_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_5_address0" type="array">
+               <obj_property name="ElementShortName">a_5_address0[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_5_address0[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_4_q1" type="array">
+               <obj_property name="ElementShortName">a_4_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_4_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_4_ce1" type="logic">
+               <obj_property name="ElementShortName">a_4_ce1</obj_property>
+               <obj_property name="ObjectShortName">a_4_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_4_address1" type="array">
+               <obj_property name="ElementShortName">a_4_address1[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_4_address1[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_4_q0" type="array">
+               <obj_property name="ElementShortName">a_4_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_4_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_4_ce0" type="logic">
+               <obj_property name="ElementShortName">a_4_ce0</obj_property>
+               <obj_property name="ObjectShortName">a_4_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_4_address0" type="array">
+               <obj_property name="ElementShortName">a_4_address0[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_4_address0[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_3_q1" type="array">
+               <obj_property name="ElementShortName">a_3_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_3_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_3_ce1" type="logic">
+               <obj_property name="ElementShortName">a_3_ce1</obj_property>
+               <obj_property name="ObjectShortName">a_3_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_3_address1" type="array">
+               <obj_property name="ElementShortName">a_3_address1[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_3_address1[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_3_q0" type="array">
+               <obj_property name="ElementShortName">a_3_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_3_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_3_ce0" type="logic">
+               <obj_property name="ElementShortName">a_3_ce0</obj_property>
+               <obj_property name="ObjectShortName">a_3_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_3_address0" type="array">
+               <obj_property name="ElementShortName">a_3_address0[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_3_address0[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_2_q1" type="array">
+               <obj_property name="ElementShortName">a_2_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_2_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_2_ce1" type="logic">
+               <obj_property name="ElementShortName">a_2_ce1</obj_property>
+               <obj_property name="ObjectShortName">a_2_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_2_address1" type="array">
+               <obj_property name="ElementShortName">a_2_address1[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_2_address1[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_2_q0" type="array">
+               <obj_property name="ElementShortName">a_2_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_2_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_2_ce0" type="logic">
+               <obj_property name="ElementShortName">a_2_ce0</obj_property>
+               <obj_property name="ObjectShortName">a_2_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_2_address0" type="array">
+               <obj_property name="ElementShortName">a_2_address0[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_2_address0[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_1_q1" type="array">
+               <obj_property name="ElementShortName">a_1_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_1_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_1_ce1" type="logic">
+               <obj_property name="ElementShortName">a_1_ce1</obj_property>
+               <obj_property name="ObjectShortName">a_1_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_1_address1" type="array">
+               <obj_property name="ElementShortName">a_1_address1[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_1_address1[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_1_q0" type="array">
+               <obj_property name="ElementShortName">a_1_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_1_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_1_ce0" type="logic">
+               <obj_property name="ElementShortName">a_1_ce0</obj_property>
+               <obj_property name="ObjectShortName">a_1_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_1_address0" type="array">
+               <obj_property name="ElementShortName">a_1_address0[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_1_address0[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_0_q1" type="array">
+               <obj_property name="ElementShortName">a_0_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_0_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_0_ce1" type="logic">
+               <obj_property name="ElementShortName">a_0_ce1</obj_property>
+               <obj_property name="ObjectShortName">a_0_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_0_address1" type="array">
+               <obj_property name="ElementShortName">a_0_address1[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_0_address1[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_0_q0" type="array">
+               <obj_property name="ElementShortName">a_0_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_0_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_0_ce0" type="logic">
+               <obj_property name="ElementShortName">a_0_ce0</obj_property>
+               <obj_property name="ObjectShortName">a_0_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/a_0_address0" type="array">
+               <obj_property name="ElementShortName">a_0_address0[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_0_address0[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group117" type="group">
+         <obj_property name="label">Block-level IO Handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/ap_start" type="logic">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/ap_done" type="logic">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/ap_idle" type="logic">
+            <obj_property name="ElementShortName">ap_idle</obj_property>
+            <obj_property name="ObjectShortName">ap_idle</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/ap_ready" type="logic">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group122" type="group">
+         <obj_property name="label">Reset</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/ap_rst" type="logic">
+            <obj_property name="ElementShortName">ap_rst</obj_property>
+            <obj_property name="ObjectShortName">ap_rst</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group124" type="group">
+         <obj_property name="label">Clock</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_matrix_conv_top/AESL_inst_matrix_conv/ap_clk" type="logic">
+            <obj_property name="ElementShortName">ap_clk</obj_property>
+            <obj_property name="ObjectShortName">ap_clk</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group126" type="group">
+      <obj_property name="label">Test Bench Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="group127" type="group">
+         <obj_property name="label">Internal Signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group128" type="group">
+            <obj_property name="label">Simulation Status</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_matrix_conv_top/AUTOTB_TRANSACTION_NUM" type="array">
+               <obj_property name="ElementShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="ObjectShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/ready_cnt" type="array">
+               <obj_property name="ElementShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/done_cnt" type="array">
+               <obj_property name="ElementShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group129" type="group">
+            <obj_property name="label">Port Depth</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_matrix_conv_top/LENGTH_a_0" type="array">
+               <obj_property name="ElementShortName">LENGTH_a_0[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_a_0[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/LENGTH_a_1" type="array">
+               <obj_property name="ElementShortName">LENGTH_a_1[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_a_1[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/LENGTH_a_2" type="array">
+               <obj_property name="ElementShortName">LENGTH_a_2[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_a_2[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/LENGTH_a_3" type="array">
+               <obj_property name="ElementShortName">LENGTH_a_3[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_a_3[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/LENGTH_a_4" type="array">
+               <obj_property name="ElementShortName">LENGTH_a_4[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_a_4[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/LENGTH_a_5" type="array">
+               <obj_property name="ElementShortName">LENGTH_a_5[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_a_5[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/LENGTH_a_6" type="array">
+               <obj_property name="ElementShortName">LENGTH_a_6[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_a_6[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/LENGTH_a_7" type="array">
+               <obj_property name="ElementShortName">LENGTH_a_7[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_a_7[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/LENGTH_a_8" type="array">
+               <obj_property name="ElementShortName">LENGTH_a_8[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_a_8[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/LENGTH_a_9" type="array">
+               <obj_property name="ElementShortName">LENGTH_a_9[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_a_9[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/LENGTH_b_0" type="array">
+               <obj_property name="ElementShortName">LENGTH_b_0[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_b_0[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/LENGTH_b_1" type="array">
+               <obj_property name="ElementShortName">LENGTH_b_1[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_b_1[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/LENGTH_b_2" type="array">
+               <obj_property name="ElementShortName">LENGTH_b_2[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_b_2[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/LENGTH_res_0" type="array">
+               <obj_property name="ElementShortName">LENGTH_res_0[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_res_0[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/LENGTH_res_1" type="array">
+               <obj_property name="ElementShortName">LENGTH_res_1[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_res_1[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/LENGTH_res_2" type="array">
+               <obj_property name="ElementShortName">LENGTH_res_2[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_res_2[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/LENGTH_res_3" type="array">
+               <obj_property name="ElementShortName">LENGTH_res_3[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_res_3[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/LENGTH_res_4" type="array">
+               <obj_property name="ElementShortName">LENGTH_res_4[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_res_4[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/LENGTH_res_5" type="array">
+               <obj_property name="ElementShortName">LENGTH_res_5[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_res_5[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/LENGTH_res_6" type="array">
+               <obj_property name="ElementShortName">LENGTH_res_6[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_res_6[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/LENGTH_res_7" type="array">
+               <obj_property name="ElementShortName">LENGTH_res_7[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_res_7[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group154" type="group">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group155" type="group">
+            <obj_property name="label">res(memory)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_7_d0" type="array">
+               <obj_property name="ElementShortName">res_7_d0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">res_7_d0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_7_we0" type="logic">
+               <obj_property name="ElementShortName">res_7_we0</obj_property>
+               <obj_property name="ObjectShortName">res_7_we0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_7_ce0" type="logic">
+               <obj_property name="ElementShortName">res_7_ce0</obj_property>
+               <obj_property name="ObjectShortName">res_7_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_7_address0" type="array">
+               <obj_property name="ElementShortName">res_7_address0[2:0]</obj_property>
+               <obj_property name="ObjectShortName">res_7_address0[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_6_d0" type="array">
+               <obj_property name="ElementShortName">res_6_d0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">res_6_d0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_6_we0" type="logic">
+               <obj_property name="ElementShortName">res_6_we0</obj_property>
+               <obj_property name="ObjectShortName">res_6_we0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_6_ce0" type="logic">
+               <obj_property name="ElementShortName">res_6_ce0</obj_property>
+               <obj_property name="ObjectShortName">res_6_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_6_address0" type="array">
+               <obj_property name="ElementShortName">res_6_address0[2:0]</obj_property>
+               <obj_property name="ObjectShortName">res_6_address0[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_5_d0" type="array">
+               <obj_property name="ElementShortName">res_5_d0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">res_5_d0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_5_we0" type="logic">
+               <obj_property name="ElementShortName">res_5_we0</obj_property>
+               <obj_property name="ObjectShortName">res_5_we0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_5_ce0" type="logic">
+               <obj_property name="ElementShortName">res_5_ce0</obj_property>
+               <obj_property name="ObjectShortName">res_5_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_5_address0" type="array">
+               <obj_property name="ElementShortName">res_5_address0[2:0]</obj_property>
+               <obj_property name="ObjectShortName">res_5_address0[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_4_d0" type="array">
+               <obj_property name="ElementShortName">res_4_d0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">res_4_d0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_4_we0" type="logic">
+               <obj_property name="ElementShortName">res_4_we0</obj_property>
+               <obj_property name="ObjectShortName">res_4_we0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_4_ce0" type="logic">
+               <obj_property name="ElementShortName">res_4_ce0</obj_property>
+               <obj_property name="ObjectShortName">res_4_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_4_address0" type="array">
+               <obj_property name="ElementShortName">res_4_address0[2:0]</obj_property>
+               <obj_property name="ObjectShortName">res_4_address0[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_3_d0" type="array">
+               <obj_property name="ElementShortName">res_3_d0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">res_3_d0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_3_we0" type="logic">
+               <obj_property name="ElementShortName">res_3_we0</obj_property>
+               <obj_property name="ObjectShortName">res_3_we0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_3_ce0" type="logic">
+               <obj_property name="ElementShortName">res_3_ce0</obj_property>
+               <obj_property name="ObjectShortName">res_3_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_3_address0" type="array">
+               <obj_property name="ElementShortName">res_3_address0[2:0]</obj_property>
+               <obj_property name="ObjectShortName">res_3_address0[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_2_d0" type="array">
+               <obj_property name="ElementShortName">res_2_d0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">res_2_d0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_2_we0" type="logic">
+               <obj_property name="ElementShortName">res_2_we0</obj_property>
+               <obj_property name="ObjectShortName">res_2_we0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_2_ce0" type="logic">
+               <obj_property name="ElementShortName">res_2_ce0</obj_property>
+               <obj_property name="ObjectShortName">res_2_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_2_address0" type="array">
+               <obj_property name="ElementShortName">res_2_address0[2:0]</obj_property>
+               <obj_property name="ObjectShortName">res_2_address0[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_1_d0" type="array">
+               <obj_property name="ElementShortName">res_1_d0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">res_1_d0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_1_we0" type="logic">
+               <obj_property name="ElementShortName">res_1_we0</obj_property>
+               <obj_property name="ObjectShortName">res_1_we0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_1_ce0" type="logic">
+               <obj_property name="ElementShortName">res_1_ce0</obj_property>
+               <obj_property name="ObjectShortName">res_1_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_1_address0" type="array">
+               <obj_property name="ElementShortName">res_1_address0[2:0]</obj_property>
+               <obj_property name="ObjectShortName">res_1_address0[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_0_d0" type="array">
+               <obj_property name="ElementShortName">res_0_d0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">res_0_d0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_0_we0" type="logic">
+               <obj_property name="ElementShortName">res_0_we0</obj_property>
+               <obj_property name="ObjectShortName">res_0_we0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_0_ce0" type="logic">
+               <obj_property name="ElementShortName">res_0_ce0</obj_property>
+               <obj_property name="ObjectShortName">res_0_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/res_0_address0" type="array">
+               <obj_property name="ElementShortName">res_0_address0[2:0]</obj_property>
+               <obj_property name="ObjectShortName">res_0_address0[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group188" type="group">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group189" type="group">
+            <obj_property name="label">b(memory)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_matrix_conv_top/b_2_q1" type="array">
+               <obj_property name="ElementShortName">b_2_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">b_2_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/b_2_ce1" type="logic">
+               <obj_property name="ElementShortName">b_2_ce1</obj_property>
+               <obj_property name="ObjectShortName">b_2_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/b_2_address1" type="array">
+               <obj_property name="ElementShortName">b_2_address1[1:0]</obj_property>
+               <obj_property name="ObjectShortName">b_2_address1[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/b_2_q0" type="array">
+               <obj_property name="ElementShortName">b_2_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">b_2_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/b_2_ce0" type="logic">
+               <obj_property name="ElementShortName">b_2_ce0</obj_property>
+               <obj_property name="ObjectShortName">b_2_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/b_2_address0" type="array">
+               <obj_property name="ElementShortName">b_2_address0[1:0]</obj_property>
+               <obj_property name="ObjectShortName">b_2_address0[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/b_1_q1" type="array">
+               <obj_property name="ElementShortName">b_1_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">b_1_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/b_1_ce1" type="logic">
+               <obj_property name="ElementShortName">b_1_ce1</obj_property>
+               <obj_property name="ObjectShortName">b_1_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/b_1_address1" type="array">
+               <obj_property name="ElementShortName">b_1_address1[1:0]</obj_property>
+               <obj_property name="ObjectShortName">b_1_address1[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/b_1_q0" type="array">
+               <obj_property name="ElementShortName">b_1_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">b_1_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/b_1_ce0" type="logic">
+               <obj_property name="ElementShortName">b_1_ce0</obj_property>
+               <obj_property name="ObjectShortName">b_1_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/b_1_address0" type="array">
+               <obj_property name="ElementShortName">b_1_address0[1:0]</obj_property>
+               <obj_property name="ObjectShortName">b_1_address0[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/b_0_q1" type="array">
+               <obj_property name="ElementShortName">b_0_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">b_0_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/b_0_ce1" type="logic">
+               <obj_property name="ElementShortName">b_0_ce1</obj_property>
+               <obj_property name="ObjectShortName">b_0_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/b_0_address1" type="array">
+               <obj_property name="ElementShortName">b_0_address1[1:0]</obj_property>
+               <obj_property name="ObjectShortName">b_0_address1[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/b_0_q0" type="array">
+               <obj_property name="ElementShortName">b_0_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">b_0_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/b_0_ce0" type="logic">
+               <obj_property name="ElementShortName">b_0_ce0</obj_property>
+               <obj_property name="ObjectShortName">b_0_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/b_0_address0" type="array">
+               <obj_property name="ElementShortName">b_0_address0[1:0]</obj_property>
+               <obj_property name="ObjectShortName">b_0_address0[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group208" type="group">
+            <obj_property name="label">a(memory)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_9_q1" type="array">
+               <obj_property name="ElementShortName">a_9_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_9_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_9_ce1" type="logic">
+               <obj_property name="ElementShortName">a_9_ce1</obj_property>
+               <obj_property name="ObjectShortName">a_9_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_9_address1" type="array">
+               <obj_property name="ElementShortName">a_9_address1[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_9_address1[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_9_q0" type="array">
+               <obj_property name="ElementShortName">a_9_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_9_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_9_ce0" type="logic">
+               <obj_property name="ElementShortName">a_9_ce0</obj_property>
+               <obj_property name="ObjectShortName">a_9_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_9_address0" type="array">
+               <obj_property name="ElementShortName">a_9_address0[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_9_address0[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_8_q1" type="array">
+               <obj_property name="ElementShortName">a_8_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_8_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_8_ce1" type="logic">
+               <obj_property name="ElementShortName">a_8_ce1</obj_property>
+               <obj_property name="ObjectShortName">a_8_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_8_address1" type="array">
+               <obj_property name="ElementShortName">a_8_address1[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_8_address1[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_8_q0" type="array">
+               <obj_property name="ElementShortName">a_8_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_8_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_8_ce0" type="logic">
+               <obj_property name="ElementShortName">a_8_ce0</obj_property>
+               <obj_property name="ObjectShortName">a_8_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_8_address0" type="array">
+               <obj_property name="ElementShortName">a_8_address0[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_8_address0[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_7_q1" type="array">
+               <obj_property name="ElementShortName">a_7_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_7_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_7_ce1" type="logic">
+               <obj_property name="ElementShortName">a_7_ce1</obj_property>
+               <obj_property name="ObjectShortName">a_7_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_7_address1" type="array">
+               <obj_property name="ElementShortName">a_7_address1[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_7_address1[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_7_q0" type="array">
+               <obj_property name="ElementShortName">a_7_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_7_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_7_ce0" type="logic">
+               <obj_property name="ElementShortName">a_7_ce0</obj_property>
+               <obj_property name="ObjectShortName">a_7_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_7_address0" type="array">
+               <obj_property name="ElementShortName">a_7_address0[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_7_address0[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_6_q1" type="array">
+               <obj_property name="ElementShortName">a_6_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_6_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_6_ce1" type="logic">
+               <obj_property name="ElementShortName">a_6_ce1</obj_property>
+               <obj_property name="ObjectShortName">a_6_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_6_address1" type="array">
+               <obj_property name="ElementShortName">a_6_address1[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_6_address1[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_6_q0" type="array">
+               <obj_property name="ElementShortName">a_6_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_6_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_6_ce0" type="logic">
+               <obj_property name="ElementShortName">a_6_ce0</obj_property>
+               <obj_property name="ObjectShortName">a_6_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_6_address0" type="array">
+               <obj_property name="ElementShortName">a_6_address0[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_6_address0[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_5_q1" type="array">
+               <obj_property name="ElementShortName">a_5_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_5_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_5_ce1" type="logic">
+               <obj_property name="ElementShortName">a_5_ce1</obj_property>
+               <obj_property name="ObjectShortName">a_5_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_5_address1" type="array">
+               <obj_property name="ElementShortName">a_5_address1[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_5_address1[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_5_q0" type="array">
+               <obj_property name="ElementShortName">a_5_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_5_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_5_ce0" type="logic">
+               <obj_property name="ElementShortName">a_5_ce0</obj_property>
+               <obj_property name="ObjectShortName">a_5_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_5_address0" type="array">
+               <obj_property name="ElementShortName">a_5_address0[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_5_address0[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_4_q1" type="array">
+               <obj_property name="ElementShortName">a_4_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_4_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_4_ce1" type="logic">
+               <obj_property name="ElementShortName">a_4_ce1</obj_property>
+               <obj_property name="ObjectShortName">a_4_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_4_address1" type="array">
+               <obj_property name="ElementShortName">a_4_address1[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_4_address1[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_4_q0" type="array">
+               <obj_property name="ElementShortName">a_4_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_4_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_4_ce0" type="logic">
+               <obj_property name="ElementShortName">a_4_ce0</obj_property>
+               <obj_property name="ObjectShortName">a_4_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_4_address0" type="array">
+               <obj_property name="ElementShortName">a_4_address0[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_4_address0[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_3_q1" type="array">
+               <obj_property name="ElementShortName">a_3_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_3_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_3_ce1" type="logic">
+               <obj_property name="ElementShortName">a_3_ce1</obj_property>
+               <obj_property name="ObjectShortName">a_3_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_3_address1" type="array">
+               <obj_property name="ElementShortName">a_3_address1[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_3_address1[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_3_q0" type="array">
+               <obj_property name="ElementShortName">a_3_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_3_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_3_ce0" type="logic">
+               <obj_property name="ElementShortName">a_3_ce0</obj_property>
+               <obj_property name="ObjectShortName">a_3_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_3_address0" type="array">
+               <obj_property name="ElementShortName">a_3_address0[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_3_address0[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_2_q1" type="array">
+               <obj_property name="ElementShortName">a_2_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_2_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_2_ce1" type="logic">
+               <obj_property name="ElementShortName">a_2_ce1</obj_property>
+               <obj_property name="ObjectShortName">a_2_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_2_address1" type="array">
+               <obj_property name="ElementShortName">a_2_address1[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_2_address1[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_2_q0" type="array">
+               <obj_property name="ElementShortName">a_2_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_2_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_2_ce0" type="logic">
+               <obj_property name="ElementShortName">a_2_ce0</obj_property>
+               <obj_property name="ObjectShortName">a_2_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_2_address0" type="array">
+               <obj_property name="ElementShortName">a_2_address0[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_2_address0[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_1_q1" type="array">
+               <obj_property name="ElementShortName">a_1_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_1_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_1_ce1" type="logic">
+               <obj_property name="ElementShortName">a_1_ce1</obj_property>
+               <obj_property name="ObjectShortName">a_1_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_1_address1" type="array">
+               <obj_property name="ElementShortName">a_1_address1[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_1_address1[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_1_q0" type="array">
+               <obj_property name="ElementShortName">a_1_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_1_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_1_ce0" type="logic">
+               <obj_property name="ElementShortName">a_1_ce0</obj_property>
+               <obj_property name="ObjectShortName">a_1_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_1_address0" type="array">
+               <obj_property name="ElementShortName">a_1_address0[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_1_address0[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_0_q1" type="array">
+               <obj_property name="ElementShortName">a_0_q1[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_0_q1[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_0_ce1" type="logic">
+               <obj_property name="ElementShortName">a_0_ce1</obj_property>
+               <obj_property name="ObjectShortName">a_0_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_0_address1" type="array">
+               <obj_property name="ElementShortName">a_0_address1[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_0_address1[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_0_q0" type="array">
+               <obj_property name="ElementShortName">a_0_q0[7:0]</obj_property>
+               <obj_property name="ObjectShortName">a_0_q0[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_0_ce0" type="logic">
+               <obj_property name="ElementShortName">a_0_ce0</obj_property>
+               <obj_property name="ObjectShortName">a_0_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_matrix_conv_top/a_0_address0" type="array">
+               <obj_property name="ElementShortName">a_0_address0[3:0]</obj_property>
+               <obj_property name="ObjectShortName">a_0_address0[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>
